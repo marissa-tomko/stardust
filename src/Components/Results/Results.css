@@ -1,0 +1,52 @@
+.results-table-div {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  /* border-collapse: collapse; */
+}
+
+ .searchbar-header {
+  padding: 25px 0;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+th {
+  /* border: solid 1px; */
+  /* border-color: grey; */
+  font-weight: 300;
+  font-size: 20px;
+  /* padding: 20px 0; */
+}
+
+td {
+  /* border: solid 1px; */
+  /* border-color: grey; */
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
+
+.row-one {
+  padding-top: 50px;
+}
+
+.row-two {
+  padding-top: 150px;
+}
+
+.main-forecast {
+  width: 33%;
+  padding-top: 20px;
+}
+
+.main-forecast, p {
+  max-width: 800px;
+}
+
+.sub-forecast {
+  width: 33%;
+  padding-top: 20px;
+}
