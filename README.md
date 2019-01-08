@@ -6,7 +6,7 @@ The user clicks on a sign and their daily horoscope is displayed on the page. If
 
 ![screen shot 2019-01-07 at 7 05 48 pm](https://user-images.githubusercontent.com/10997212/50807483-6d123f80-12af-11e9-93d5-e4e14272214e.png)
 
-![screen shot 2019-01-07 at 7 08 38 pm](https://user-images.githubusercontent.com/10997212/50807569-b2367180-12af-11e9-91c1-20d99a283417.png)
+![screen shot 2019-01-07 at 7 17 17 pm](https://user-images.githubusercontent.com/10997212/50807872-e5c5cb80-12b0-11e9-96be-71b20ef1c99f.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
