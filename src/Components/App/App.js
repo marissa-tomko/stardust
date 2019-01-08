@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import SearchBar from '../SearchBar/SearchBar';
 import Results from '../Results/Results';
 
+import StardustMoon from './stardust-moon.png';
+
 import './App.css';
 
 class App extends Component {
@@ -27,7 +29,7 @@ class App extends Component {
       return jsonResponse;
     })
     .then(response => {
-      return userSign === "find-sign" || userSign.length === 0 ?
+      return userSign.length === 0 ?
       this.setState({
         showResults: false
       })
@@ -35,30 +37,45 @@ class App extends Component {
         astroResults: response,
         showResults: true
       })
-
-
     })
   }
 
   render() {
     return (
       <div className="app">
-        <h1 className="app-header">S T A R D U S T</h1>
 
-        <SearchBar
-          getAztro={this.getAztro}
-        />
+        <div className="col-xs-12">
+          <div className="col-xs-6">
+            <SearchBar getAztro={this.getAztro} />
+          </div>
 
-        { this.state.showResults ?
-          <Results
-            description={this.state.astroResults.description}
-            compatibility={this.state.astroResults.compatibility}
-            mood={this.state.astroResults.mood}
-            color={this.state.astroResults.color}
-            lucky_number={this.state.astroResults.lucky_number}
-            lucky_time={this.state.astroResults.lucky_time}
-          />
-        : '' }
+          <div className="app-title">
+            <p>Stardust</p>
+          </div>
+
+          <div className="col-xs-6">
+            {
+              this.state.showResults ?
+              <div className="results-div">
+                <Results
+                  description={this.state.astroResults.description}
+                  compatibility={this.state.astroResults.compatibility}
+                  mood={this.state.astroResults.mood}
+                  color={this.state.astroResults.color}
+                  lucky_number={this.state.astroResults.lucky_number}
+                  lucky_time={this.state.astroResults.lucky_time}
+                />
+              </div>
+                : ''
+            }
+          </div>
+        </div>
+
+
+        <div className="img-div col-xs-12">
+          <img className="img-fluid" src={StardustMoon} alt="moon" height="400" width="400" />
+        </div>
+
       </div>
     );
   }
